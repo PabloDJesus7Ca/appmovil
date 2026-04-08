@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "CieloObs",
+    "slug": "cielo-obs",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0e1a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se usa para fotografiar fenómenos del cielo.",
+        "NSMicrophoneUsageDescription": "Se usa para grabar notas de voz sobre la observación.",
+        "NSLocationWhenInUseUsageDescription": "Se usa para registrar la ubicación GPS de la observación.",
+        "NSPhotoLibraryUsageDescription": "Se usa para adjuntar fotos a las observaciones."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0e1a"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.cielo_obs_20241234"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-location",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite adjuntar fotos a tus observaciones del cielo."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "15f42dfd-b499-4754-8e44-aebb0777723e"
+      }
+    },
+    "owner": "pablo45643"
+  }
+}
