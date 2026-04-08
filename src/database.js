@@ -7,7 +7,7 @@
 import * as SQLite from 'expo-sqlite'
 
 // Abrir (o crear) la base de datos local
-const db = SQLite.openDatabaseSync('observaciones.db')
+const db = SQLite.openDatabaseSync('observacion.db')
 
 // ─────────────────────────────────────────────
 // INICIALIZAR TABLAS
